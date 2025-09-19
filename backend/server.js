@@ -12,6 +12,8 @@ app.use(express.json())
 const authRouter = require('./routes/auth');
 app.use('/auth', authRouter);
 
+
+
 const uri = process.env.MONGODB_URI || 'mongodb://localhost:27017/'
 
 mongoose.connect(uri)
